@@ -1,0 +1,18 @@
+#navbar {
+    position: fixed;
+    left:0;
+    width: 300px;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+}
+
+ul.p-bullets {
+    margin: 0;
+    padding: 0;
+}
+li.p-indented-bullet {
+    padding-left: 50px;
+}
