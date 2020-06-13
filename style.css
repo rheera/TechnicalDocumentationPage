@@ -27,6 +27,8 @@ body {
         grid-area: navbar;
         position: relative;
         margin: 0;
+        width: 100%;
+        border: none;
     }
     #main-doc{
         grid-area: main-doc;
