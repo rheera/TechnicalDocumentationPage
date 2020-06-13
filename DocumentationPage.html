@@ -7,27 +7,27 @@
 </head>
 <body>
 <nav id="navbar">
-    <h1 id="header-title">Basic HTML Notes</h1>
+    <header id="header-title">Basic HTML Notes</header>
     <ul class="nav-links">
-        <li class="nav-link"><a href=#basic_tags>Basic Tags</a></li>
-        <li class="nav-link"><a href=#html5_tags>HTML5 Tags</a></li>
-        <li class="nav-link"><a href=#images>Images</a></li>
-        <li class="nav-link"><a href=#anchor_tag>Anchor Tag</a></li>
-        <li class="nav-link"><a href=#lists>Lists</a></li>
-        <li class="nav-link"><a href=#text_fields>Text Fields</a></li>
-        <li class="nav-link"><a href=#buttons>Buttons</a></li>
-        <li class="nav-link"><a href=#div>Div</a></li>
-        <li class="nav-link"><a href=#doctype>Doctype</a></li>
+        <li class="nav-link-item"><a class="nav-link" href=#basic_tags>Basic Tags</a></li>
+        <li class="nav-link-item"><a class="nav-link" href=#html5_tags>HTML5 Tags</a></li>
+        <li class="nav-link-item"><a class="nav-link" href=#images>Images</a></li>
+        <li class="nav-link-item"><a class="nav-link" href=#anchor_tag>Anchor Tag</a></li>
+        <li class="nav-link-item"><a class="nav-link" href=#lists>Lists</a></li>
+        <li class="nav-link-item"><a class="nav-link" href=#text_fields>Text Fields</a></li>
+        <li class="nav-link-item"><a class="nav-link" href=#buttons>Buttons</a></li>
+        <li class="nav-link-item"><a class="nav-link" href=#div>Div</a></li>
+        <li class="nav-link-item"><a class="nav-link" href=#doctype>Doctype</a></li>
     </ul>
 </nav>
 
 <main id="main-doc">
     <!-- Basic Tags Section -->
     <section class="main-section" id="basic_tags">
-        <h2 class="section-headers" id="basic-header">Basic Tags</h2>
+        <header class="section-headers" id="basic-header">Basic Tags</header>
         <p class="section-ps" id="basic-p">
         <ul class="p-bullets">
-        <li class="p-bullet">><code>&lth1&gt&lt/h1&gt</code> are heading tags, they start big and go small down to h6</li>
+        <li class="p-bullet"><code>&lth1&gt&lt/h1&gt</code> are heading tags, they start big and go small down to h6</li>
         <li class="p-bullet"><code>&ltp&gt&lt/p&gt</code> body paragraph</li>
         <li class="p-bullet"><code>&lt!-- are comments --&gt</code></li>
     </ul>
@@ -36,7 +36,7 @@
 
     <!-- HTML5 Tags -->
     <section class="main-section" id="html5_tags">
-        <h2 class="section-headers" id="html5-header">HTML5 Tags</h2>
+        <header class="section-headers" id="html5-header">HTML5 Tags</header>
         <p class="section-ps" id="html5-p">
         <ul class="p-bullets">
         <li class="p-bullet">HTML5 introduces more descriptive HTML tags: Main, header, footer, nav, video, article, section, and others</li>
@@ -52,7 +52,7 @@
 
     <!-- Images -->
     <section class="main-section" id="images">
-        <h2 class="section-headers" id="images-header">Images</h2>
+        <header class="section-headers" id="images-header">Images</header>
         <p class="section-ps" id="images-p">
             <ul class="p-bullets">
         <li class="p-bullet"> Add images with: &ltimg src="url"&gt</li>
@@ -64,7 +64,7 @@
 
     <!-- Anchor Tag -->
     <section class="main-section" id="anchor_tag">
-        <h2 class="section-headers" id=anchor-header">Anchor Tag</h2>
+        <header class="section-headers" id=anchor-header">Anchor Tag</header>
         <p class="section-ps" id="anchor-p">
         <ul class="p-bullets">
         <li class="p-bullet">Use a (anchor) elements to link content outside of your webpage</li>
@@ -84,7 +84,7 @@
 
     <!-- Lists -->
     <section class="main-section" id="lists">
-        <h2 class="section-headers" id="lists-header">Lists</h2>
+        <header class="section-headers" id="lists-header">Lists</header>
         <p class="section-ps" id="lists-p">
         <ul class="p-bullets">
         <li class="p-bullet">&ltul&gt for unordered lists, &ltol&gt for ordered (ordered is numbered)</li>
@@ -99,7 +99,7 @@
 
     <!-- Text Fields -->
     <section class="main-section" id="text_fields">
-        <h2 class="section-headers" id="text-fields-header">Text Fields</h2>
+        <header class="section-headers" id="text-fields-header">Text Fields</header>
         <p class="section-ps" id="text-fields-p">
         <ul class="p-bullets">
         <li class="p-bullet">Input let’s you get input from user</li>
@@ -113,9 +113,10 @@
 
     <!-- Buttons -->
     <section class="main-section" id="buttons">
-        <h2 class="section-headers" id="buttons-header">Buttons</h2>
+        <header class="section-headers" id="buttons-header">Buttons</header>
+        <!-- submit button -->
         <h3 class="section-subheaders">Submit Button</h3>
-        <p class="section-ps" id="buttons-p">
+        <p class="section-ps" id="submit-button-p">
         <ul class="p-bullets">
         <li class="p-bullet"><code>&ltbutton type="submit"&gt</code> this button submits the form&lt/button&gt</li>
         <li class="p-bullet">Goes inside the form element</li>
@@ -130,31 +131,68 @@
             &lt/label&gt<br>
             &ltlabel for="outdoor"&gt<br>
             &nbsp&nbsp&ltinput id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor<br>
-            &lt/label&gt</code>
-        </ul>
+            &lt/label&gt
+        </code>
+    </ul>
         </p>
+
+        <!-- Radio Button -->
         <h3 class="section-subheaders">Radio Button</h3>
+        <p class="section-ps" id="radio-button-p">
+        <ul class="p-bullets">
+            <li class="p-bullet">Each button can be nested between a label element</li>
+            <li class="p-indented-bullet">It will be associated with the label element surrounding it</li>
+            <li class="p-bullet">All related radio buttons should have the same name attribute to create a group</li>
+            <li class="p-indented-bullet">A group let’s you select only one radio button from them</li>
+            <li class="p-bullet">Best practice to set a for attribute on the label element, with a value of the id attribute of the input element</li>
+            <li class="p-indented-bullet">Let’s assistive technology create a linked relationship between the label and the child input</li>
+            <li class="p-bullet">Usually inside form</li>
+            <code>&ltlabel for="indoor"&gt<br>
+                &nbsp&nbsp&ltinput id="indoor" value="indoor" type="radio" name="indoor-outdoor"&gtIndoor<br>
+                &lt/label&gt<br>
+            </code>
+    </ul>
+        </p>
+
+        <!-- checkboxes -->
         <h3 class="section-subheaders">Checkboxes</h3>
+        <p class="section-ps" id="checkboxes-p">
+        <ul class="p-bullets">
+        <li class="p-bullet">Same as radio except type=”checkbox”</li>
+    </ul>
+        </p>
     </section>
 
     <!-- Div -->
     <section class="main-section" id="div">
-        <h2 class="section-headers" id="div-header">Div</h2>
+        <header class="section-headers" id="div-header">Div</header>
         <p class="section-ps" id="div-p">
         <ul class="p-bullets">
-        <li class="p-bullet"></li>
-        <li class="p-bullet"></li>
+        <li class="p-bullet">Div element is a division element, a container for other elements</li>
     </ul>
         </p>
     </section>
 
     <!-- Doctype -->
     <section class="main-section" id="doctype">
-        <h2 class="section-headers" id="doctype-header">Doctype</h2>
+        <header class="section-headers" id="doctype-header">Doctype</header>
         <p class="section-ps" id="doctype-p">
         <ul class="p-bullets">
-        <li class="p-bullet"></li>
-        <li class="p-bullet"></li>
+        <li class="p-bullet">Need to tell the browser which version of HTML your page is using</li>
+        <li class="p-bullet">And need to wrap entire html document in &lthtml&gt&lt/html&gt tags</li>
+        <li class="p-bullet">You can add other html tags for more order</li>
+        <li class="p-bullet">Markup info goes into head tag, content goes into body tag</li>
+        <li class="p-bullet">Metadata elements (link, meta, title, and style) typically go inside the head element</li>
+        <code>&lt!DOCTYPE html&gt<br>
+            &lthtml&gt<br>
+            &nbsp&nbsp&lthead&gt<br>
+            &nbsp&nbsp&nbsp&nbsp&lt!-- metadata elements --&gt<br>
+            &nbsp&nbsp&lt/head&gt<br>
+            &nbsp&nbsp&ltbody&gt<br>
+            &nbsp&nbsp&nbsp&nbsp&lt!-- page contents --&gt<br>
+            &nbsp&nbsp&lt/body&gt<br>
+            &lt/html>&gt<br>
+        </code>
     </ul>
         </p>
     </section>

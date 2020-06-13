@@ -1,7 +1,13 @@
+body {
+    font-family: Lato, "Helvetica Neue", sans-serif;
+}
 #navbar {
     position: fixed;
     left:0;
     width: 300px;
+    border-right: solid;
+    border-color: #444444;
+    height: fit-content;
 }
 
 #main-doc {
@@ -9,10 +15,62 @@
     margin-left: 310px;
 }
 
-ul.p-bullets {
-    margin: 0;
-    padding: 0;
+@media only screen and (max-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "navbar"
+    "main-doc";
+    }
+    #navbar {
+        grid-area: navbar;
+        position: relative;
+        margin: 0;
+    }
+    #main-doc{
+        grid-area: main-doc;
+        position: relative;
+        margin: 0;
+    }
 }
+/* indenting bullet within a bullet */
 li.p-indented-bullet {
     padding-left: 50px;
+}
+
+#header-title {
+    font-size: 2em;
+}
+
+.section-headers {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style-type: disc;
+    padding: 0;
+}
+.nav-link-item {
+    border-top: 1px solid;
+    border-color: #444444;
+    line-height: 4em;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: slategrey;
+    list-style: none;
+    width: 100%;
+}
+
+.p-bullets {
+    color: #4e4e4e;
+    line-height: 1.25em;
+}
+
+.section-subheaders {
+    font-weight: 600;
+    letter-spacing: 1px;
+
 }
